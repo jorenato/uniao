@@ -1,0 +1,1938 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    max-width: 1050px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    border-bottom: 2px solid #0056b3; /* Blue bottom border */
+    margin-bottom: 15px;
+}
+
+.header-top {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc; /* Light border under top part */
+}
+
+.logo {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.proposal-box {
+    border: 1px solid #999;
+    padding: 5px 10px;
+    margin-right: auto; /* Pushes other elements to the right */
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.proposal-number {
+    border: none;
+    border-bottom: 1px solid #999;
+    font-size: 14px;
+    font-weight: bold;
+    width: 60px;
+    text-align: center;
+    padding: 2px;
+}
+
+.header-fields {
+    display: flex;
+    flex-direction:row;
+    align-items: flex-start; /* Align labels and inputs */
+    gap: 5px;
+}
+
+.header-fields .field-group.inline {
+    display: flex;
+    align-items: center;
+    width: 200px; /* Adjust as needed */
+    border: 1px solid #ccc;
+    padding: 2px 4px;
+}
+
+.header-fields label {
+    margin-right: 5px;
+    font-size: 11px;
+    color: #555;
+    flex-shrink: 0;
+}
+
+.header-fields input {
+    border: none;
+    font-size: 11px;
+    padding: 2px;
+    width: 100%;
+    background: transparent; /* Match background */
+    outline: none; /* Remove focus outline */
+}
+
+.header-title {
+    background-color: #0056b3; /* Blue background */
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    margin-top: 5px; /* Space between border and title bar */
+}
+
+section {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #ccc; /* Dashed separator */
+}
+
+section:last-of-type {
+    border-bottom: none; /* Remove border from last section */
+}
+
+h2 {
+    font-size: 13px;
+    color: #0056b3;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.row {
+    display: flex;
+    gap: 15px; /* Space between field groups in a row */
+    margin-bottom: 10px;
+    align-items: flex-end; /* Align inputs along their bottom border */
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px; /* Space between label and input */
+}
+
+.field-group label {
+    font-size: 11px;
+    color: #555;
+    margin-bottom: 1px;
+}
+
+.field-group input[type="text"],
+.field-group input[type="email"],
+.field-group input[type="tel"],
+.field-group input[type="number"],
+.field-group select,
+.field-group input[type="date"] {
+    border: none;
+    border-bottom: 1px solid #999;
+    padding: 4px 2px;
+    font-size: 12px;
+    background-color: transparent;
+    outline: none;
+    box-sizing: border-box;
+    height: 24px;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.field-group input[type="text"].invalid,
+.field-group input[type="email"].invalid,
+.field-group input[type="tel"].invalid,
+.field-group input[type="number"].invalid,
+.field-group input[type="date"].invalid {
+    border-bottom-color: #e74c3c;
+}
+
+.field-group input[type="text"].valid,
+.field-group input[type="email"].valid,
+.field-group input[type="tel"].valid,
+.field-group input[type="number"].valid,
+.field-group input[type="date"].valid {
+    border-bottom-color: #2ecc71;
+}
+
+.field-group input[type="date"] {
+    color: #555;
+    min-width: 100px;
+}
+
+.field-group select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23999%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+    background-size: 8px 8px;
+    padding-right: 20px;
+}
+
+/* Input sizing helpers */
+.flex-grow { flex-grow: 1; min-width: 150px; }
+.flex-grow-2 { flex-grow: 2; min-width: 200px; }
+.medium { width: 120px; flex-shrink: 0; }
+.short { width: 60px; flex-shrink: 0; }
+
+/* Benefits Section */
+.benefits h2 .instruction {
+    font-weight: normal;
+    font-size: 11px;
+    color: #666;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5px 15px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin: 0;
+    width: 13px;
+    height: 13px;
+}
+
+.checkbox-group label {
+    font-size: 11px;
+}
+
+.reversible {
+    margin-left: 10px;
+    font-size: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+}
+.reversible input[type="checkbox"] {
+    width: 11px;
+    height: 11px;
+}
+
+/* Dependents Section */
+
+.dependents{
+    page-break-before: avoid;
+    page-break-after: always;
+}
+
+.dependent-header {
+    display: grid;
+    grid-template-columns: 25px 2fr 1fr 1fr 3fr;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
+    align-items: center;
+}
+.plan-options-header {
+    text-align: center;
+}
+
+.dependent-row {
+    display: grid;
+    grid-template-columns: 25px 2fr 1fr 1fr 3fr;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.dependent-number {
+    font-size: 11px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.dependent-row .field-group {
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.dependent-row .field-group input {
+    width: 100%;
+}
+
+.dependent-row .field-group.date-group-small input[type="date"] {
+    min-width: unset;
+    width: 100%;
+}
+
+.dependent-plans {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 10px;
+    font-size: 10px;
+    align-items: center;
+}
+.dependent-plans input[type="checkbox"] {
+    margin: 0;
+    width: 11px;
+    height: 11px;
+}
+.dependent-plans label {
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.dependent-contratacao-row {
+    display: flex;
+    gap: 15px; /* Space between field groups in a row */
+    margin-bottom: 10px;
+    align-items: flex-end; /* Align inputs along their bottom border */
+    page-break-inside: avoid;
+}
+
+.contratacao-proposta-dependent{
+    page-break-inside: avoid;
+}
+
+.dependent-contratacao-row .field-group {
+    margin-bottom: 0; /* Remove bottom margin from field groups in this row type */
+}
+
+.dependent-contratacao-row .field-group input[type="text"],
+.dependent-contratacao-row .field-group input[type="email"],
+.dependent-contratacao-row .field-group input[type="tel"],
+.dependent-contratacao-row .field-group input[type="date"],
+.dependent-contratacao-row .field-group select {
+    font-size: 11px; /* Slightly smaller font for dependent rows */
+    height: 22px; /* Slightly smaller height */
+    padding: 3px 2px;
+}
+
+.dependent-contratacao-row .field-group label {
+     font-size: 10px; /* Smaller label font */
+}
+
+.dependent-contratacao-row .date-group label {
+    font-size: 9px; /* Even smaller label for date inputs */
+}
+
+.dependent-contratacao-row .checkbox-group label {
+    font-size: 10px; /* Smaller label for checkboxes */
+}
+
+.dependent-contratacao-row .radio-group label {
+    font-size: 10px;
+}
+
+.documents-checkboxes {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Space between columns of checkboxes */
+    width: 100%;
+}
+
+.checkbox-group-column {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.checkbox-group-column .checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.checkbox-group-column .checkbox-group input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+    margin-top: 2px; /* Align checkbox with text baseline */
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 2px solid #0056b3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    line-height: 1.4;
+    color: #555;
+}
+
+.footer-logo img.logo-small {
+    height: 25px;
+    margin-bottom: 3px;
+    display: block;
+}
+
+.footer-address {
+    text-align: right;
+}
+
+/* New section styles */
+
+.terms-declaration{
+    page-break-after: always;
+}
+
+.terms-declaration h2 {
+    font-size: 13px;
+    color: #0056b3;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.terms-declaration h3 {
+     font-size: 12px;
+     color: #0056b3;
+     margin: 15px 0 5px 0;
+     border-bottom: 1px dashed #eee;
+     padding-bottom: 3px;
+}
+
+.terms-declaration p {
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.terms-declaration ul {
+     font-size: 11px;
+     line-height: 1.5;
+     margin: 5px 0 10px 20px;
+     padding: 0;
+}
+
+.terms-declaration ul li {
+     margin-bottom: 5px;
+}
+
+.declaration-section {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    position: relative; /* Needed for absolute positioning of attention box */
+}
+
+.declaration-section p {
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: left; /* Declaration text should align left */
+}
+
+.declaration-section input[type="text"] {
+     border: none;
+     border-bottom: 1px solid #999;
+     padding: 2px 2px;
+     font-size: 11px;
+     background-color: transparent;
+     outline: none;
+     box-sizing: border-box;
+     height: 18px; /* Smaller height for inline inputs */
+     text-align: center;
+     min-width: 30px; /* Minimum width */
+}
+
+.declaration-section .small-input {
+    width: 60px; /* Fixed width for the R$ input */
+}
+
+.declaration-date {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.declaration-date input.date-input {
+     width: 80px;
+}
+
+.declaration-date input.date-input.short {
+     width: 40px;
+}
+.declaration-date input.date-input.medium {
+     width: 80px;
+}
+
+.signature-area {
+     margin-top: 30px;
+     text-align: center;
+     position: relative; /* Positioning context for line and text */
+}
+
+
+.signature-line {
+     border-bottom: 1px solid #333;
+     width: 50%; /* Adjust width as needed */
+     margin: 0 auto 5px auto; /* Center the line and add space below */
+}
+
+
+.signature-line-int {
+     border-bottom: 1px solid #333;
+     width: 50%; /* Adjust width as needed */
+     margin: 0 5 5px auto; /* Center the line and add space below */
+}
+
+
+
+
+
+.signature-area span {
+     font-size: 10px;
+     color: #555;
+}
+
+.attention-box {
+     position:static;
+     bottom: 15px;
+     right: 15px;
+     border: 2px solid #e74c3c; /* Red border */
+     padding: 10px;
+     background-color: #fef0ef; /* Light red background */
+     max-width: 200px;
+     font-size: 10px;
+     line-height: 1.4;
+}
+
+.attention-box strong {
+     display: block;
+     text-align: center;
+     margin-bottom: 5px;
+     font-size: 11px;
+     color: #c0392b; /* Darker red */
+}
+
+.attention-box p {
+     margin: 0;
+     text-align: left; /* Align attention text left */
+     color: #555;
+}
+
+.agent-declaration {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #ccc; /* Dashed separator */
+    page-break-after: always;
+}
+
+.agent-declaration h2 {
+     font-size: 13px;
+     color: #0056b3;
+     margin-bottom: 10px;
+     border-bottom: 1px solid #eee;
+     padding-bottom: 5px;
+}
+
+.agent-declaration p {
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.agent-declaration .row {
+     margin-bottom: 20px;
+}
+
+.agent-declaration .signature-area {
+     margin-top: 0;
+}
+
+.contratacao-proposta-responsavel {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #ccc; /* Dashed separator */
+}
+
+.contratacao-proposta-responsavel .contratacao-header {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #8e44ad; /* Purple bottom border */
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+}
+
+.contratacao-proposta-responsavel .logo-levesaude {
+      height: 30px;
+      margin-right: 15px;
+}
+
+.contratacao-proposta-responsavel .header-title-contratacao {
+      font-weight: bold;
+      font-size: 16px;
+      color: #8e44ad; /* Purple color */
+      margin-right: auto;
+      margin-left: auto;
+}
+
+.contratacao-proposta-responsavel .proposal-box-contratacao {
+    border: 1px solid #999;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #8e44ad; /* Purple color */
+}
+
+.contratacao-proposta-responsavel .contratacao-header {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #8e44ad; /* Purple bottom border */
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+}
+
+.contratacao-proposta .header-title-contratacao {
+      font-weight: bold;
+      font-size: 16px;
+      color: #8e44ad; /* Purple color */
+      margin-right: auto;
+      margin-left: auto;
+}
+
+.contratacao-proposta .proposal-box-contratacao {
+    border: 1px solid #999;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #8e44ad; /* Purple color */
+}
+
+.contratacao-proposta .logo-levesaude {
+      height: 30px;
+      margin-right: 15px;
+}
+
+.contratacao-proposta-responsavel h2 {
+     font-size: 13px;
+     color: #0056b3;
+     margin-bottom: 10px;
+     border-bottom: 1px solid #eee;
+     padding-bottom: 5px;
+}
+
+.contratacao-proposta-responsavel .row {
+     margin-bottom: 10px;
+}
+
+.contratacao-proposta-responsavel .field-group label {
+     font-size: 10px;
+}
+
+.contratacao-proposta-responsavel .field-group input[type="text"],
+.contratacao-proposta-responsavel .field-group input[type="email"],
+.contratacao-proposta-responsavel .field-group input[type="tel"],
+.contratacao-proposta-responsavel .field-group input[type="date"],
+.contratacao-proposta-responsavel .field-group select {
+    font-size: 11px;
+    height: 22px;
+    padding: 3px 2px;
+}
+
+.contratacao-proposta-responsavel .date-group label {
+    font-size: 9px; /* Even smaller label for date inputs */
+}
+
+.contratacao-proposta-responsavel .radio-group label {
+    font-size: 10px;
+}
+
+.contratacao-proposta-responsavel .documents-checkboxes {
+     display: flex;
+     align-items: flex-start;
+     gap: 20px;
+     width: 100%;
+}
+
+.contratacao-proposta-responsavel .checkbox-group-column {
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+}
+
+.contratacao-proposta-responsavel .checkbox-group-column .checkbox-group {
+     display: flex;
+     align-items: center;
+     gap: 5px;
+}
+
+.contratacao-proposta-responsavel .checkbox-group-column input[type="checkbox"] {
+     width: 12px;
+     height: 12px;
+     margin-top: 2px;
+}
+
+.contratacao-proposta-responsavel .declaration-text {
+     font-size: 10px;
+     line-height: 1.4;
+     margin-bottom: 8px;
+     text-align: justify;
+}
+
+.contratacao-proposta-responsavel .declaration-text strong {
+     font-size: 11px;
+}
+
+.vigency-details {
+    display: flex;
+    justify-content: space-around; /* Space out the columns */
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    font-size: 11px;
+}
+
+.vigency-column strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #0056b3;
+}
+
+.vigency-column p {
+    margin: 0;
+    line-height: 1.4;
+    white-space: pre-wrap; /* Preserve line breaks if any in content */
+}
+
+.contratacao-proposta-responsavel .signature-area {
+     margin-top: 30px;
+}
+
+.contratacao-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    font-size: 10px;
+    color: #555;
+    page-break-after: always;
+}
+
+.contratacao-footer .logo-levesaude {
+    height: 25px;
+}
+
+.contratacao-footer-text {
+     flex-grow: 1;
+     text-align: center;
+     font-size: 11px;
+     font-weight: bold;
+     color: #8e44ad; /* Purple color */
+}
+
+.contratacao-footer-ans {
+     font-size: 10px;
+     color: #333;
+     padding: 5px 10px;
+     border: 1px solid #ccc;
+}
+
+/* Action Buttons */
+.actions {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed #ccc;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.actions button {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #0056b3;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.actions button:hover {
+    background-color: #004494;
+}
+
+/* Carta de Orientação section */
+.carta-orientacao {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #ccc; /* Dashed separator */
+}
+
+.carta-orientacao .contratacao-header {
+     display: flex;
+     align-items: center;
+     border-bottom: 2px solid #8e44ad; /* Purple bottom border */
+     padding-bottom: 10px;
+     margin-bottom: 15px;
+}
+
+.carta-orientacao .logo-levesaude {
+     height: 30px;
+     margin-right: 15px;
+}
+
+.carta-orientacao .header-title-contratacao {
+     font-weight: bold;
+     font-size: 16px;
+     color: #8e44ad; /* Purple color */
+     margin-right: auto;
+     margin-left: auto;
+}
+
+.carta-orientacao h2 {
+    font-size: 13px;
+    color: #0056b3;
+    margin: 15px 0 5px 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.carta-orientacao p {
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.carta-orientacao strong {
+     font-size: 11px;
+     color: #0056b3;
+}
+
+.carta-orientacao ul {
+     font-size: 11px;
+     line-height: 1.5;
+     margin: 5px 0 10px 20px;
+     padding: 0;
+     list-style-type: disc;
+}
+
+.carta-orientacao ul li {
+     margin-bottom: 5px;
+}
+
+.carta-orientacao .attention-box {
+     border: 2px solid #e74c3c; /* Red border */
+     padding: 10px;
+     background-color: #fef0ef; /* Light red background */
+     margin: 20px 0;
+     font-size: 10px;
+     line-height: 1.4;
+}
+
+.carta-orientacao .attention-box strong {
+     display: block;
+     margin-bottom: 5px;
+     font-size: 11px;
+     color: #c0392b; /* Darker red */
+}
+
+.carta-orientacao .attention-box p {
+     margin: 0;
+     text-align: left;
+     color: #555;
+}
+
+.carta-orientacao .contact-info {
+     font-size: 11px;
+     line-height: 1.5;
+     margin-top: 15px;
+}
+
+.carta-orientacao .contact-info a {
+     color: #0056b3;
+     text-decoration: none;
+}
+
+.carta-orientacao .contact-info a:hover {
+     text-decoration: underline;
+}
+
+.carta-orientacao .signature-blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 30px; /* Space between columns */
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px dashed #ccc;
+}
+
+.carta-orientacao-footer {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-top: 20px;
+     padding-top: 10px;
+     border-top: 1px solid #eee;
+     font-size: 10px;
+     color: #555;
+     page-break-after: always;
+}
+
+.carta-orientacao-footer .logo-levesaude {
+     height: 25px;
+}
+
+.carta-orientacao-footer-text {
+      flex-grow: 1;
+      text-align: center;
+      font-size: 11px;
+      font-weight: bold;
+      color: #8e44ad; /* Purple color */
+}
+
+.carta-orientacao-footer-ans {
+      font-size: 10px;
+      color: #333;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+}
+
+/* Declaracao de Saude section */
+.declaracao-saude {
+     margin-bottom: 20px;
+     padding-bottom: 15px;
+     border-bottom: 1px dashed #ccc; /* Dashed separator */
+}
+
+.declaracao-saude .contratacao-header {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #8e44ad; /* Purple bottom border */
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+}
+
+.declaracao-saude .logo-levesaude {
+      height: 30px;
+      margin-right: 15px;
+}
+
+.declaracao-saude .header-title-contratacao {
+      font-weight: bold;
+      font-size: 16px;
+      color: #8e44ad; /* Purple color */
+      margin-right: auto;
+      margin-left: auto;
+}
+
+.declaracao-saude .proposal-box-contratacao {
+    border: 1px solid #999;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #8e44ad; /* Purple color */
+}
+
+.declaracao-saude h2 {
+    font-size: 13px;
+    color: #0056b3;
+    margin: 15px 0 5px 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.declaracao-saude .declaration-saude-intro {
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.health-declaration-table {
+    width: 100%;
+    border-collapse: collapse; /* Remove space between cells */
+    margin-top: 15px;
+}
+
+.health-declaration-table th,
+.health-declaration-table td {
+    border: 1px solid #ddd; /* Light grey border for cells */
+    padding: 5px; /* Reduced padding */
+    text-align: left;
+    font-size: 10px; /* Smaller font for table content */
+    vertical-align: top; /* Align content to top */
+}
+
+.health-declaration-table th {
+    background-color: #f2f2f2; /* Light grey background for headers */
+    font-weight: bold;
+    text-align: center; /* Center header text */
+    font-size: 11px;
+    padding: 10px; /* Ensure header padding is also reduced */
+}
+
+.health-declaration-table td:first-child {
+    text-align: center; /* Center item number */
+    width: 30px; /* Fixed width for item number */
+    flex-shrink: 0;
+}
+
+.health-declaration-table td select {
+    width: 100%; /* Make select fill the column */
+    padding: 3px;
+    font-size: 10px;
+    height: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.health-declaration-table.bmi-table input[type="number"] {
+    width: 50px; /* Give number inputs a fixed small width */
+    padding: 3px; /* Smaller padding for number inputs */
+    font-size: 10px; /* Smaller font for number inputs */
+    border: 1px solid #ccc; /* Add a small border to inputs */
+     box-sizing: border-box; /* Include padding and border in element's total width and height */
+     height: 20px; /* Reduced height */
+}
+
+.health-declaration-table.bmi-table th,
+.health-declaration-table.bmi-table td {
+    padding: 5px; /* Consistent padding for this table */
+}
+
+/* Continuation Declaracao de Saude section */
+.declaracao-saude-continuation {
+     margin-bottom: 20px;
+     padding-bottom: 15px;
+     border-bottom: 1px dashed #ccc; /* Dashed separator */
+     page-break-before: always;
+}
+
+.declaracao-saude-continuation .contratacao-header {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #8e44ad; /* Purple bottom border */
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+}
+
+.declaracao-saude-continuation .logo-levesaude {
+      height: 30px;
+      margin-right: 15px;
+}
+
+.declaracao-saude-continuation .header-title-contratacao {
+      font-weight: bold;
+      font-size: 16px;
+      color: #8e44ad; /* Purple color */
+      margin-right: auto;
+      margin-left: auto;
+}
+
+.declaracao-saude-continuation .proposal-box-contratacao {
+    border: 1px solid #999;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #8e44ad; /* Purple color */
+}
+
+.declaracao-saude-continuation .health-declaration-table {
+    width: 100%;
+    border-collapse: collapse; /* Remove space between cells */
+    margin-top: 15px;
+}
+
+.declaracao-saude-continuation .health-declaration-table th,
+.declaracao-saude-continuation .health-declaration-table td {
+    border: 1px solid #ddd; /* Light grey border for cells */
+    padding: 5px; /* Reduced padding */
+    text-align: left;
+    font-size: 10px; /* Smaller font for table content */
+    vertical-align: top; /* Align content to top */
+}
+
+.declaracao-saude-continuation .health-declaration-table th {
+    background-color: #f2f2f2; /* Light grey background for headers */
+    font-weight: bold;
+    text-align: center; /* Center header text */
+    font-size: 11px;
+    padding: 5px; /* Ensure header padding is also reduced */
+}
+
+.declaracao-saude-continuation .health-declaration-table td:first-child {
+    text-align: center; /* Center item number */
+    width: 30px; /* Fixed width for item number */
+    flex-shrink: 0;
+}
+
+.declaracao-saude-continuation .health-declaration-table td select {
+    width: 100%; /* Make select fill the column */
+    padding: 3px;
+    font-size: 10px;
+    height: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.declaracao-saude-continuation .health-declaration-table.bmi-table input[type="number"] {
+    width: 50px; /* Give number inputs a fixed small width */
+    padding: 3px; /* Smaller padding for number inputs */
+    font-size: 10px; /* Smaller font for number inputs */
+    border: 1px solid #ccc; /* Add a small border to inputs */
+     box-sizing: border-box; /* Include padding and border in element's total width and height */
+     height: 20px; /* Reduced height */
+}
+
+.declaracao-saude-continuation .health-declaration-table.bmi-table th,
+.declaracao-saude-continuation .health-declaration-table.bmi-table td {
+    padding: 5px; /* Consistent padding for this table */
+}
+
+.declaracao-saude-continuation .bmi-explanation {
+    font-size: 10px;
+    line-height: 1.4;
+    margin-top: 10px;
+    text-align: left;
+    color: #555;
+}
+
+/* Complementary Info section */
+.informacoes-complementares {
+     margin-bottom: 20px;
+     padding-bottom: 15px;
+     border-bottom: 1px dashed #ccc; /* Dashed separator */
+}
+
+.informacoes-complementares .contratacao-header {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #8e44ad; /* Purple bottom border */
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+}
+
+.informacoes-complementares .logo-levesaude {
+      height: 30px;
+      margin-right: 15px;
+}
+
+.informacoes-complementares .header-title-contratacao {
+      font-weight: bold;
+      font-size: 16px;
+      color: #8e44ad; /* Purple color */
+      margin-right: auto;
+      margin-left: auto;
+}
+
+.informacoes-complementares .proposal-box-contratacao {
+    border: 1px solid #999;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #8e44ad; /* Purple color */
+}
+
+.informacoes-complementares h2 {
+    font-size: 13px;
+    color: #0056b3;
+    margin: 15px 0 5px 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.informacoes-complementares .complementary-info-explanation {
+     font-size: 11px;
+     line-height: 1.5;
+     margin-bottom: 15px;
+     text-align: justify;
+     color: #555;
+}
+
+.complementary-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.complementary-info-table th,
+.complementary-info-table td {
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: left;
+    font-size: 10px;
+    vertical-align: top;
+}
+
+.complementary-info-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+    font-size: 11px;
+    padding: 5px;
+}
+
+.complementary-info-table th[rowspan="2"] {
+     vertical-align: middle; /* Center text vertically in spanned header */
+}
+
+.complementary-info-table td input[type="text"] {
+     width: 100%;
+     padding: 3px;
+     font-size: 10px;
+     height: 20px;
+     box-sizing: border-box;
+     border: 1px solid #ccc;
+}
+
+.complementary-info-table td input[type="checkbox"] {
+    margin: 0 auto; /* Center checkboxes */
+    display: block; /* Ensure checkbox is treated as a block for centering */
+    width: 14px;
+    height: 14px;
+}
+
+.complementary-info-table .item-num-input {
+    width: 30px; /* Fixed width for item number input */
+    text-align: center;
+}
+
+.complementary-info-table .year-input {
+     width: 50px; /* Fixed width for year input */
+     text-align: center;
+}
+
+/* Final Declaracao de Saude section */
+.declaracao-saude-final {
+     margin-bottom: 20px;
+     padding-bottom: 15px;
+     border-bottom: 1px dashed #ccc; /* Dashed separator */
+}
+
+.declaracao-saude-final .contratacao-header {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #8e44ad; /* Purple bottom border */
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+}
+
+.declaracao-saude-final .logo-levesaude {
+      height: 30px;
+      margin-right: 15px;
+}
+
+.declaracao-saude-final .header-title-contratacao {
+      font-weight: bold;
+      font-size: 16px;
+      color: #8e44ad; /* Purple color */
+      margin-right: auto;
+      margin-left: auto;
+}
+
+.declaracao-saude-final .proposal-box-contratacao {
+    border: 1px solid #999;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #8e44ad; /* Purple color */
+}
+
+.declaracao-saude-final h2 {
+    font-size: 13px;
+    color: #0056b3;
+    margin: 15px 0 5px 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.declaracao-saude-final .declaration-text {
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.declaracao-saude-final .radio-group-column {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     margin-top: 15px;
+}
+
+.declaracao-saude-final .radio-group-column .radio-group {
+    display: flex;
+    align-items: flex-start; /* Align checkbox and text */
+    gap: 5px; /* Space between checkbox and label */
+}
+
+.declaracao-saude-final .radio-group-column input[type="checkbox"] { 
+    margin-top: 3px; /* Adjust vertical alignment */
+    flex-shrink: 0; /* Prevent checkbox from shrinking */
+     width: 13px; /* Default checkbox size */
+     height: 13px; /* Default checkbox size */
+}
+
+.declaracao-saude-final .radio-group-column label {
+    font-size: 11px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.declaracao-saude-final .signature-area {
+     margin-top: 30px;
+}
+
+.termo-promocoes {
+     margin-bottom: 20px;
+     padding-bottom: 15px;
+     border-bottom: 1px dashed #ccc; /* Dashed separator */
+}
+
+.termo-promocoes .contratacao-header {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #8e44ad; /* Purple bottom border */
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+}
+
+.termo-promocoes .logo-levesaude {
+      height: 30px;
+      margin-right: 15px;
+}
+
+.termo-promocoes .header-title-contratacao {
+      font-weight: bold;
+      font-size: 16px;
+      color: #8e44ad; /* Purple color */
+      margin-right: auto;
+      margin-left: auto;
+}
+
+.termo-promocoes .proposal-box-contratacao {
+    border: 1px solid #999;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #8e44ad; /* Purple color */
+}
+
+.termo-promocoes h2 {
+    font-size: 13px;
+    color: #0056b3;
+    margin: 15px 0 5px 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.termo-promocoes h2 .instruction {
+    font-weight: normal;
+    font-size: 11px;
+    color: #666;
+}
+
+.termo-promocoes p {
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.termo-promocoes .contratacao-footer {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-top: 20px;
+     padding-top: 10px;
+     border-top: 1px solid #eee;
+     font-size: 10px;
+     color: #555;
+}
+
+.termo-promocoes .contratacao-footer .logo-levesaude {
+     height: 25px;
+}
+
+.termo-promocoes .contratacao-footer-text {
+      flex-grow: 1;
+      text-align: center;
+      font-size: 11px;
+      font-weight: bold;
+      color: #8e44ad; /* Purple color */
+}
+
+.termo-promocoes .contratacao-footer-ans {
+      font-size: 10px;
+      color: #333;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+}
+
+/* New section styles - Termo Promocoes Table */
+.termo-promocoes-table {
+     margin-bottom: 20px;
+     padding-bottom: 15px;
+     border-bottom: 1px dashed #ccc; /* Dashed separator */
+}
+
+.termo-promocoes-table .contratacao-header {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #8e44ad; /* Purple bottom border */
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+}
+
+.termo-promocoes-table .logo-levesaude {
+      height: 30px;
+      margin-right: 15px;
+}
+
+.termo-promocoes-table .header-title-contratacao {
+      font-weight: bold;
+      font-size: 16px;
+      color: #8e44ad; /* Purple color */
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center; /* Center multi-line title */
+}
+
+.termo-promocoes-table .proposal-box-contratacao {
+    border: 1px solid #999;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #8e44ad; /* Purple color */
+}
+
+.promocoes-table {
+    width: 100%;
+    border-collapse: collapse; /* Remove space between cells */
+    margin-top: 15px;
+}
+
+.promocoes-table th,
+.promocoes-table td {
+    border: 1px solid #ddd; /* Light grey border for cells */
+    padding: 5px; /* Reduced padding */
+    text-align: left;
+    font-size: 10px; /* Smaller font for table content */
+    vertical-align: top; /* Align content to top */
+}
+
+.promocoes-table th {
+    background-color: #f2f2f2; /* Light grey background for headers */
+    font-weight: bold;
+    text-align: center; /* Center header text */
+    font-size: 11px;
+    padding: 5px; /* Ensure header padding is also reduced */
+}
+
+.promocoes-table th[rowspan="2"] {
+     vertical-align: middle; /* Center text vertically in spanned header */
+}
+
+.promocoes-table td:first-child {
+    font-weight: bold; /* Bold the group name */
+}
+
+.promocoes-table td:nth-child(3), /* 30 dias */
+.promocoes-table td:nth-child(4), /* 24h* */
+.promocoes-table td:nth-child(5), /* Redução para Associados */
+.promocoes-table td:nth-child(6)  /* Redução para Concorrência */
+{
+     text-align: center; /* Center the carencia values */
+     white-space: nowrap; /* Prevent wrapping for carencia values */
+     width: 70px; /* Fixed width for carencia columns */
+     flex-shrink: 0;
+}
+
+.small-note {
+    font-size: 10px;
+    text-align: left;
+    margin-top: 5px;
+    color: #555;
+}
+
+.termo-promocoes-table .contratacao-footer {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-top: 20px;
+     padding-top: 10px;
+     border-top: 1px solid #eee;
+     font-size: 10px;
+     color: #555;
+}
+
+.termo-promocoes-table .contratacao-footer .logo-levesaude {
+     height: 25px;
+}
+
+.termo-promocoes-table .contratacao-footer-text {
+      flex-grow: 1;
+      text-align: center;
+      font-size: 11px;
+      font-weight: bold;
+      color: #8e44ad; /* Purple color */
+}
+
+.termo-promocoes-table .contratacao-footer-ans {
+      font-size: 10px;
+      color: #333;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+}
+
+.declaracao-recebimento {
+     margin-bottom: 20px;
+     padding-bottom: 15px;
+     border-bottom: 1px dashed #ccc; /* Dashed separator */
+}
+
+.declaracao-recebimento .contratacao-header {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #8e44ad; /* Purple bottom border */
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+}
+
+.declaracao-recebimento .logo-levesaude {
+      height: 30px;
+      margin-right: 15px;
+}
+
+.declaracao-recebimento .header-title-contratacao {
+      font-weight: bold;
+      font-size: 16px;
+      color: #8e44ad; /* Purple color */
+      margin-right: auto;
+      margin-left: auto;
+      text-align: left; /* Align title left */
+}
+
+.declaracao-recebimento .proposal-box-contratacao {
+    border: 1px solid #999;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #8e44ad; /* Purple color */
+}
+
+.declaracao-recebimento p {
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.declaracao-recebimento .signature-area {
+     margin-top: 30px;
+}
+
+.declaracao-recebimento .contratacao-footer {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-top: 20px;
+     padding-top: 10px;
+     border-top: 1px solid #eee;
+     font-size: 10px;
+     color: #555;
+}
+
+.declaracao-recebimento .contratacao-footer .logo-levesaude {
+     height: 25px;
+}
+
+.declaracao-recebimento .contratacao-footer-text {
+      flex-grow: 1;
+      text-align: center;
+      font-size: 11px;
+      font-weight: bold;
+      color: #8e44ad; /* Purple color */
+}
+
+.declaracao-recebimento .contratacao-footer-ans {
+      font-size: 10px;
+      color: #333;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+}
+
+/* New section styles - Termo de Consentimento */
+.termo-consentimento {
+     margin-bottom: 20px;
+     padding-bottom: 15px;
+     border-bottom: 1px dashed #ccc; /* Dashed separator */
+}
+
+.termo-consentimento .contratacao-header {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #8e44ad; /* Purple bottom border */
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+}
+
+.termo-consentimento .logo-levesaude {
+      height: 30px;
+      margin-right: 15px;
+}
+
+.termo-consentimento .header-title-contratacao {
+      font-weight: bold;
+      font-size: 16px;
+      color: #8e44ad; /* Purple color */
+      margin-right: auto;
+      margin-left: auto;
+      text-align: left; /* Align title left */
+}
+
+.termo-consentimento .proposal-box-contratacao {
+    border: 1px solid #999;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #8e44ad; /* Purple color */
+}
+
+.termo-consentimento h2 {
+    font-size: 13px;
+    color: #0056b3;
+    margin: 15px 0 5px 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.termo-consentimento h3 {
+     font-size: 12px;
+     color: #0056b3;
+     margin: 15px 0 5px 0;
+     border-bottom: 1px dashed #eee;
+     padding-bottom: 3px;
+}
+
+.termo-consentimento h4 {
+     font-size: 11px;
+     color: #0056b3;
+     margin: 10px 0 5px 0;
+}
+
+.termo-consentimento p {
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.termo-consentimento a {
+     color: #0056b3;
+     text-decoration: none;
+}
+
+.termo-consentimento a:hover {
+     text-decoration: underline;
+}
+
+.termo-consentimento .signature-area {
+     margin-top: 30px;
+}
+
+.termo-consentimento .contratacao-footer {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-top: 20px;
+     padding-top: 10px;
+     border-top: 1px solid #eee;
+     font-size: 10px;
+     color: #555;
+}
+
+.termo-consentimento .contratacao-footer .logo-levesaude {
+     height: 25px;
+}
+
+.termo-consentimento .contratacao-footer-text {
+      flex-grow: 1;
+      text-align: center;
+      font-size: 11px;
+      font-weight: bold;
+      color: #8e44ad; /* Purple color */
+}
+
+.termo-consentimento .contratacao-footer-ans {
+      font-size: 10px;
+      color: #333;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+}
+
+/* New section styles - Termo de Adesao Odonto */
+.termo-adesao-odonto {
+     margin-bottom: 20px;
+     padding-bottom: 15px;
+     border-bottom: 1px dashed #ccc; /* Dashed separator */
+}
+
+.termo-adesao-odonto .odonto-header {
+     display: flex;
+     align-items: center;
+     border-bottom: 2px solid #1f8f29; /* Green bottom border */
+     padding-bottom: 10px;
+     margin-bottom: 15px;
+}
+
+.termo-adesao-odonto .logo-isodont {
+     height: 30px;
+     margin-right: 15px;
+}
+
+.termo-adesao-odonto .header-title-odonto {
+     font-weight: bold;
+     font-size: 16px;
+     color: #1f8f29; /* Green color */
+     margin-right: auto;
+     margin-left: auto;
+     text-align: center; /* Center multi-line title */
+}
+
+.termo-adesao-odonto .odonto-ans {
+      font-size: 10px;
+      color: #333;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      background-color: #e0ffe0; /* Light green background */
+}
+
+.odonto-campaign {
+     text-align: center;
+     margin-bottom: 15px;
+}
+
+.odonto-campaign .campaign-title {
+     font-size: 14px;
+     font-weight: bold;
+     color: #1f8f29; /* Green color */
+     margin-bottom: 3px;
+}
+
+.odonto-campaign .campaign-subtitle {
+     font-size: 11px;
+     font-weight: bold;
+     color: #555;
+}
+
+.termo-adesao-odonto .odonto-intro {
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.termo-adesao-odonto h2 {
+    font-size: 13px;
+    color: #0056b3;
+    margin: 15px 0 5px 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.termo-adesao-odonto .row {
+    margin-bottom: 10px;
+}
+
+.termo-adesao-odonto .field-group label {
+    font-size: 10px;
+}
+
+.termo-adesao-odonto .field-group input[type="text"],
+.termo-adesao-odonto .field-group input[type="email"],
+.termo-adesao-odonto .field-group input[type="tel"],
+.termo-adesao-odonto .field-group input[type="date"],
+.termo-adesao-odonto .field-group select {
+   font-size: 11px;
+   height: 22px;
+   padding: 3px 2px;
+}
+
+.dependent-odonto-row {
+    display: grid;
+    grid-template-columns: 20px 2fr 1fr 1fr; /* Adjust column widths as needed */
+    gap: 10px;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.dependent-odonto-row .dependent-number {
+     font-size: 11px;
+     text-align: right;
+     padding-right: 5px;
+     align-self: center; /* Center number vertically */
+}
+
+.dependent-odonto-row .dependent-spacer {
+     grid-column: 1; /* Make the spacer take the first column */
+}
+
+.dependent-odonto-row .field-group {
+    margin-bottom: 0; /* Remove margin from field groups within this row type */
+}
+
+.dependent-odonto-row .field-group label {
+     font-size: 9px; /* Smaller labels for dependent fields */
+}
+
+.dependent-odonto-row .field-group input[type="text"],
+.dependent-odonto-row .field-group input[type="email"],
+.dependent-odonto-row .field-group input[type="tel"],
+.dependent-odonto-row .field-group input[type="date"],
+.dependent-odonto-row .field-group select {
+    font-size: 10px; /* Even smaller font for dependent inputs */
+    height: 20px; /* Even smaller height */
+    padding: 2px 2px;
+}
+
+.odonto-footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    font-size: 10px;
+    color: #555;
+    text-align: center;
+    page-break-after: always;
+}
+
+.break_page{
+    page-break-before: always;
+}
+
+.odonto-footer-info {
+     line-height: 1.4;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 1cm;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  section.terms-declaration,
+  section.agent-declaration {
+
+    page-break-after: always;
+    break-after: always;
+  }
+
+  .terms-declaration,
+  .agent-declaration {
+    font-size: 12pt;
+  }
+
+  input {
+    border: none;
+    border-bottom: 1px solid #000;
+    font-size: 12pt;
+    width: auto;
+    padding: 2px;
+  }
+
+  .signature-line {
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 2em;
+    margin-top: 20px;
+  }
+
+  .signature-area {
+    margin-top: 20px;
+  }
+
+  .attention-box {
+    border: 1px solid red;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .declaracao-saude-final {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    font-size: 12pt;
+  }
+
+  .declaracao-saude-final * {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  input[type="text"], input[type="checkbox"] {
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 12pt;
+    width: auto;
+    padding: 2px;
+  }
+
+  .signature-line {
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 2em;
+    margin-top: 20px;
+  }
+
+  .signature-area {
+    margin-top: 20px;
+  }
+
+  .contratacao-header, .contratacao-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .logo-levesaude {
+    max-height: 50px;
+  }
+
+  .header-title-contratacao {
+    font-weight: bold;
+    font-size: 14pt;
+  }
+
+  .proposal-box-contratacao {
+    font-size: 12pt;
+  }
+
+  .radio-group {
+    margin-bottom: 10px;
+  }
+}
+
+
