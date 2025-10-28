@@ -25,10 +25,6 @@
                     PROPOSTA Nº <input type="text"  class="proposal-number" id="proposal_number_uniao" name="proposal_number_uniao">
                 </div>
                 <div class="header-fields">
-                    <div class="field-group inline">
-                        <label for="orgao">Órgão</label>
-                        <input type="text" id="orgao" name="orgao">
-                    </div>
                      <div class="field-group inline">
                         <label for="proponente">Proponente</label>
                         <input type="text" id="proponente" name="proponente">
@@ -390,6 +386,18 @@
                  </div>
              </div>
              <!-- End repeat block -->
+
+             <footer>
+             <div class="footer-logo">
+                <img src="Logo Uniao.png" alt="União de Benefícios Logo" class="logo-small">
+                UNIÃO DOS CONTRIBUINTES DA PREVIDÊNCIA SOCIAL DO BRASIL<br>
+             </div>
+             <div class="footer-address">
+                Av. Ernani do Amaral Peixoto, 36 - 13º andar - Centro - Niterói - RJ<br>
+                CEP 240.20.074 - Tel: (21) 2728 8800 Site: www.uniaodebeneficios.com.br<br>
+             </div>
+            </footer>
+             
         </section>
 
         <section class="terms-declaration">
@@ -1279,6 +1287,7 @@
                  <div class="vigency-column">
                      <strong>MOVIMENTAÇÃO</strong>
                      <p>30/MÊS</p>
+                     <p>14/MÊS</p>
                  </div>
                  <div class="vigency-column">
                       <strong>VIGÊNCIA</strong>
@@ -2203,10 +2212,10 @@
                       <tr>
                            <td>Peso (Kg)</td>
                            <td><input type="number" id="bmi_titular_peso" name="bmi_titular_peso"></td>
-                           <td><input type="number" id="bmi_dep1_peso" name="bmi_dep1_peso" step="0.1"></td>
-                           <td><input type="number" id="bmi_dep2_peso" name="bmi_dep2_peso" step="0.1"></td>
-                           <td><input type="number" id="bmi_dep3_peso" name="bmi_dep3_peso" step="0.1"></td>
-                           <td><input type="number" id="bmi_dep4_peso" name="bmi_dep4_peso" step="0.1"></td>
+                           <td><input type="number" id="bmi_dep1_peso" name="bmi_dep1_peso"></td>
+                           <td><input type="number" id="bmi_dep2_peso" name="bmi_dep2_peso"></td>
+                           <td><input type="number" id="bmi_dep3_peso" name="bmi_dep3_peso"></td>
+                           <td><input type="number" id="bmi_dep4_peso" name="bmi_dep4_peso"></td>
                       </tr>
                       <tr>
                            <td>Altura (m)</td>
@@ -2484,14 +2493,13 @@
                      <tr>
                          <th>Grupos</th>
                          <th>Procedimentos</th>
-                         <th colspan="4">Carências</th>
+                         <th colspan="3">Carências</th>
                      </tr>
                      <tr>
                          <th>30 dias</th>
                          <th>24h*</th>
                          <th>Redução para Associados</th>
                          <th>Redução para Concorrência</th>
-                         <th>Redução para Advindos da Concorrência</th>
                      </tr>
                  </thead>
                  <tbody>
@@ -2500,13 +2508,11 @@
                          <td>Todas as especialidades reconhecidas pelo Conselho Federal de Medicina - CFM, exceto psicologia e psiquiatria.</td>
                          <td>30 dias</td>
                          <td>24h*</td>
-                         <td>24h*</td>
                      </tr>
                      <tr>
                          <td>Exames Complementares</td>
                          <td>Raio X simples, exames de análises clínicas simples, punções e biópsias simples, e todos especificados e/ou pertinentes constantes do Rol de Procedimentos da Agência Nacional de Saúde Suplementar (ANS), vigente à época do evento.</td>
                          <td>180 dias</td>
-                         <td>24h*</td>
                          <td>24h*</td>
                      </tr>
                      <tr>
@@ -2514,27 +2520,23 @@
                          <td>Fisioterapia, sessões com nutricionista, sessões com fonoaudiólogo, sessões com terapeuta ocupacional, acupuntura e psicoterapia.</td>
                          <td>180 dias</td>
                          <td>120 dias*</td>
-                         <td>30 dias*</td>
                      </tr>
                      <tr>
                          <td>Exames Complementares</td>
                          <td>Ultrassonografia, mamografia, exames endoscópicos, exames cardiológicos (ecocardiograma, eletrocardiograma), eletroencefalograma, tomografia computadorizada bidimensional, eletroneurologia, tomocardiograma, ressonância magnética, métodos de medicina nuclear, hemodinâmica e prova de função respiratória.</td>
                          <td>180 dias</td>
                          <td>180 dias</td>
-                         <td>120 dias</td>
                      </tr>
                      <tr>
                         <td>Exames Complementares e casos clínicos cirúrgicos</td>
                          <td>Tomografia computadorizada, ressonância magnética e todos os procedimentos clínicos e cirúrgicos, exceto aqueles descritos nos itens abaixo.</td>
                          <td>180 dias</td>
                          <td>180 dias</td>
-                         <td>120 dias</td>
                      </tr>
 
                       <tr>
                          <td>Casos clínicos e cirúrgicos</td>
                          <td>Cirurgias do sistema cardio circulatório, neurocirurgia, incluindo cirurgias de coluna, cirurgias bucomaxilofacial, cirurgias cardíacas e pulmonares, cirurgias de anomalias e datas e transplantes previstos no anexo da RN 338/2013.</td>
-                         <td>180 dias</td>
                          <td>180 dias</td>
                          <td>180 dias</td>
                      </tr>
@@ -2543,12 +2545,10 @@
                          <td>Parto a termo</td>
                          <td>300 dias</td>
                          <td>300 dias</td>
-                         <td>300 dias</td>
                      </tr>
                       <tr>
                          <td>Exames, serviços auxiliares, casos clínicos e cirúrgicos</td>
                          <td>Cobertura Parcial Temporária - Preexistência</td>
-                         <td>720 dias</td>
                          <td>720 dias</td>
                          <td>720 dias</td>
                      </tr>
@@ -2645,7 +2645,7 @@ pessoais sensíveis descritos (“Dados Coletados") na forma prevista neste Term
 
               <h3>1.3. DOS DIREITOS DO TITULAR DOS DADOS COLETADOS:</h3>
               <p>Tendo em vista a observância dos princípios da proteção de dados, o Beneficiário, na qualidade de titular dos Dados Coletados, terá direito de: (a) confirmar a existência de tratamento dos Dados Coletados, obter informações e solicitar os Dados Coletados; (b) solicitar a correção de Dados Coletados incompletos, inexatos e desatualizados; (c) solicitar a anonimização, bloqueio ou eliminação de Dados Coletados desnecessários, excessivos ou tratados em desconformidade com o disposto em Lei; (d) solicitar a portabilidade dos Dados Coletados, mediante requisição expressa e observados os segredos comerciais e industriais, de acordo com a regulamentação do órgão controlador; (e) revogar, a qualquer momento, por meio de comunicação formal, o consentimento ora concedido, salvo se a manutenção dos Dados Coletados for exigida e/ou permitida por lei, conforme citado acima.</p>
-              <p>Informações adicionais sobre o tratamento dos Dados Coletados realizado pela LEVE SAÚDE poderão ser obtidas por meio do e-mail <a href="/cdn-cgi/l/email-protection#abeffbe4ebc7ceddced8cadecfce85c8c4c685c9d9"><span class="__cf_email__" data-cfemail="2d697d626d41485b485e4c584948034e4240034f5f">[email&#160;protected]</span></a>. As condições deste Termo poderão ser periodicamente atualizadas pela LEVE SAÚDE, conforme expresso na data de atualização ao final do termo.</p>
+              <p>Informações adicionais sobre o tratamento dos Dados Coletados realizado pela LEVE SAÚDE poderão ser obtidas por meio do e-mail <u>DPO@levesaude.com.br</u></span>. As condições deste Termo poderão ser periodicamente atualizadas pela LEVE SAÚDE, conforme expresso na data de atualização ao final do termo.</p>
 
               <h3>1.4. DA AUTORIZAÇÃO PARA COLETA E TRATAMENTO DOS DADOS COLETADOS:</h3>
               <p>No ato de adesão ao presente Termo, o Beneficiário, por si ou por seu representante legal, é responsável por seus dados e todos os seus dependentes e agregados e declara que consente, de maneira irretratável e irrevogável, com todas as regras e condições deste Termo, de maneira livre e espontânea, na qualidade de titular dos Dados Coletados, e autorizando a LEVE SAÚDE e os PARCEIROS que realizarão, na forma da lei vigente, o tratamento dos seus Dados Coletados, compreendendo a respectiva coleta, utilização e compartilhamento dos seus dados pessoais e dados pessoais sensíveis e dos PARCEIROS, bem como com as demais empresas integrantes do mesmo grupo econômico dos PARCEIROS, incluindo, mas não se limitando, a filiais e/ou empresas controladoras e/ou controladas, direta ou indiretamente, pelo PARCEIRO, e/ou serão excluídos, salvo se a manutenção dos Dados Coletados for exigida e/ou permitida por lei, em especial nas hipóteses previstas no art. 16 da LGPD.</p>
@@ -2963,7 +2963,7 @@ pessoais sensíveis descritos (“Dados Coletados") na forma prevista neste Term
              <div class="odonto-footer">
                  <div class="odonto-footer-info">
                       ISODONT - Instituto de Saúde Odontológica<br>
-                      Tel: (21) 2220-0175 / E-mail: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dcb5afb3b8b3b2a89cb5afb3b8b3b2a8f2bfb3b1f2beae">[email&#160;protected]</a>
+                      Tel: (21) 2220-0175 / E-mail: <u>isodont@isodont.com.br</u>
                  </div>
              </div>
 
@@ -3133,7 +3133,7 @@ pessoais sensíveis descritos (“Dados Coletados") na forma prevista neste Term
              <div class="odonto-footer">
                  <div class="odonto-footer-info">
                       ISODONT - Instituto de Saúde Odontológica<br>
-                      Tel: (21) 2220-0175 / E-mail: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dcb5afb3b8b3b2a89cb5afb3b8b3b2a8f2bfb3b1f2beae">[email&#160;protected]</a>
+                      Tel: (21) 2220-0175 / E-mail: <u>isodont@isodont.com.br</u>
                  </div>
              </div>
 
@@ -3527,7 +3527,6 @@ pessoais sensíveis descritos (“Dados Coletados") na forma prevista neste Term
              <div class="footer-address">
                 Av. Ernani do Amaral Peixoto, 36 - 13º andar - Centro - Niterói - RJ<br>
                 CEP 240.20.074 - Tel: (21) 2728 8800 Site: www.uniaodebeneficios.com.br<br>
-                E-mail: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1a7b6e7f747e73777f746e755a6f74737b757e7f787f747f7c737973756934797577347868">[email&#160;protected]</a>
              </div>
         </footer>
 

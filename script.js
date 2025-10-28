@@ -531,15 +531,6 @@ function updateAllDependentFields() {
         }
     }
 
-    // Atualiza Declaração de Saúde - IMC
-    if (bmiDep1Peso) bmiDep1Peso.value = allDependentsData[1]?.peso || '';
-    if (bmiDep1Altura) bmiDep1Altura.value = allDependentsData[1]?.altura || '';
-    if (bmiDep2Peso) bmiDep2Peso.value = allDependentsData[2]?.peso || '';
-    if (bmiDep2Altura) bmiDep2Altura.value = allDependentsData[2]?.altura || '';
-    if (bmiDep3Peso) bmiDep3Peso.value = allDependentsData[3]?.peso || '';
-    if (bmiDep3Altura) bmiDep3Altura.value = allDependentsData[3]?.altura || '';
-    if (bmiDep4Peso) bmiDep4Peso.value = allDependentsData[4]?.peso || '';
-    if (bmiDep4Altura) bmiDep4Altura.value = allDependentsData[4]?.altura || '';
 
     // Atualiza Informações Complementares (comp_info_X_depY)
     for (let compItem = 1; compItem <= 11; compItem++) {
