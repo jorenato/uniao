@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="row">
-                 <div class="field-group date-group">
+                 <div class="field-group medium">
                     <label for="nasc">Nasc.</label>
                     <input type="date" id="nasc" name="nasc" placeholder="dd/mm/aaaa">
                 </div>
@@ -77,12 +77,12 @@
                     <label for="exp">Exp.</label>
                     <input type="text" id="exp" name="exp">
                 </div>
-            </div>
-             <div class="row">
                 <div class="field-group medium">
                     <label for="cpf">CPF</label>
                     <input type="text" id="cpf" name="cpf">
                 </div>
+                </div>
+                <div class="row">
                  <div class="field-group flex-grow">
                     <label for="mae">Mãe</label>
                     <input type="text" id="mae" name="mae">
@@ -101,7 +101,7 @@
                     <label for="agencia">Agência</label>
                     <input type="text" id="agencia" name="agencia">
                 </div>
-                 <div class="field-group flex-grow">
+                 <div class="field-group medium">
                     <label for="conta_corrente">Conta corrente</label>
                     <input type="text" id="conta_corrente" name="conta_corrente">
                 </div>
@@ -111,7 +111,7 @@
                     <label for="conjuge">Cônjuge</label>
                     <input type="text" id="conjuge" name="conjuge">
                 </div>
-                 <div class="field-group date-group">
+                 <div class="field-group medium">
                     <label for="nasc_conjuge">Nasc.</label>
                     <input type="date" id="nasc_conjuge" name="nasc_conjuge" placeholder="dd/mm/aaaa">
                  </div>
@@ -122,6 +122,14 @@
                          <option value="M">M</option>
                          <option value="F">F</option>
                      </select>
+                </div>
+                <div class="field-group medium">
+                    <label for="tel">Tel.</label>
+                    <input type="tel" id="tel" name="tel">
+                </div>
+                 <div class="field-group medium">
+                    <label for="celular">Celular</label>
+                    <input type="tel" id="celular" name="celular">
                 </div>
             </div>
              <div class="row">
@@ -145,9 +153,7 @@
                     <label for="cep">CEP</label>
                     <input type="text" id="cep" name="cep">
                 </div>
-            </div>
-            <div class="row">
-                 <div class="field-group flex-grow">
+                 <div class="field-group flex-flow">
                     <label for="cidade">Cidade</label>
                     <input type="text" id="cidade" name="cidade">
                 </div>
@@ -155,17 +161,9 @@
                     <label for="est">Est.</label>
                     <input type="text" id="est" name="est" maxlength="2">
                 </div>
-                 <div class="field-group medium">
-                    <label for="tel">Tel.</label>
-                    <input type="tel" id="tel" name="tel">
                 </div>
-                 <div class="field-group medium">
-                    <label for="celular">Celular</label>
-                    <input type="tel" id="celular" name="celular">
-                </div>
-            </div>
-             <div class="row">
-                <div class="field-group flex-grow">
+                <div class="row">
+                <div class="field-group medium">
                     <label for="orgao_funcional">Órgão</label>
                     <input type="text" id="orgao_funcional" name="orgao_funcional">
                 </div>
@@ -173,7 +171,7 @@
                     <label for="mat_funcional">Mat. Funcional</label>
                     <input type="text" id="mat_funcional" name="mat_funcional">
                 </div>
-                <div class="field-group flex-grow">
+                <div class="field-group medium">
                     <label for="funcao">Função</label>
                     <input type="text" id="funcao" name="funcao">
                 </div>
@@ -491,7 +489,7 @@
                     <label for="contratacao_vendedor_cpf">CPF do Vendedor*</label>
                     <input type="text" id="contratacao_vendedor_cpf" name="contratacao_vendedor_cpf">
                 </div>
-                 <div class="field-group flex-grow">
+                 <div class="field-group flex-flow">
                     <label for="contratacao_vendedor_nome">Nome do Vendedor*</label>
                     <input type="text" id="contratacao_vendedor_nome" name="contratacao_vendedor_nome">
                 </div>
@@ -505,7 +503,7 @@
                     <label for="contratacao_cnpj_corretora">CNPJ CORRETORA</label>
                     <input type="text" id="contratacao_cnpj_corretora" name="contratacao_cnpj_corretora">
                 </div>
-                 <div class="field-group flex-grow">
+                 <div class="field-group flex-flow">
                     <label for="contratacao_nome_corretora">Nome CORRETORA</label>
                     <input type="text" id="contratacao_nome_corretora" name="contratacao_nome_corretora">
                 </div>
@@ -523,11 +521,11 @@
                     <label for="contratacao_contratante_cpf">CPF*</label>
                     <input type="text" id="contratacao_contratante_cpf" name="contratacao_contratante_cpf">
                 </div>
-                 <div class="field-group flex-grow">
+                 <div class="field-group flex-flow">
                     <label for="contratacao_contratante_nome">Nome Completo*</label>
                     <input type="text" id="contratacao_contratante_nome" name="contratacao_contratante_nome">
                 </div>
-                 <div class="field-group short">
+                 <div class="field-group medium">
                     <label for="contratacao_contratante_sexo">Sexo*</label>
                     <select id="contratacao_contratante_sexo" name="contratacao_contratante_sexo">
                          <option value=""></option>
@@ -541,7 +539,7 @@
                     <label for="contratacao_contratante_rg">Nº do RG*</label>
                     <input type="text" id="contratacao_contratante_rg" name="contratacao_contratante_rg">
                 </div>
-                 <div class="field-group date-group">
+                 <div class="field-group medium">
                     <label for="contratacao_contratante_data_emissao_rg">Data de Emissão do RG*</label>
                     <input type="date" id="contratacao_contratante_data_emissao_rg" name="contratacao_contratante_data_emissao_rg" placeholder="dd/mm/aaaa">
                  </div>
@@ -561,7 +559,7 @@
                           <option value="Uniao Estavel">União Estável</option>
                      </select>
                 </div>
-                 <div class="field-group date-group">
+                 <div class="field-group medium">
                     <label for="contratacao_contratante_data_nascimento">Data de Nascimento*</label>
                     <input type="date" id="contratacao_contratante_data_nascimento" name="contratacao_contratante_data_nascimento" placeholder="dd/mm/aaaa">
                 </div>
@@ -606,11 +604,11 @@
                     <label for="contratacao_contratante_qual_plano">Qual?</label>
                     <input type="text" id="contratacao_contratante_qual_plano" name="contratacao_contratante_qual_plano">
                 </div>
-                 <div class="field-group date-group">
+                 <div class="field-group medium">
                     <label for="contratacao_contratante_data_inicio">Data de Início: _/_/_</label>
                     <input type="date" id="contratacao_contratante_data_inicio" name="contratacao_contratante_data_inicio" placeholder="dd/mm/aaaa">
                 </div>
-                  <div class="field-group date-group">
+                  <div class="field-group medium">
                     <label for="contratacao_contratante_data_ultimo_pagamento">Data último pagamento: _/_/_</label>
                     <input type="date" id="contratacao_contratante_data_ultimo_pagamento" name="contratacao_contratante_data_ultimo_pagamento" placeholder="dd/mm/aaaa">
                 </div>
@@ -620,7 +618,7 @@
                     <label for="contratacao_contratante_cep">CEP*</label>
                     <input type="text" id="contratacao_contratante_cep" name="contratacao_contratante_cep">
                 </div>
-                  <div class="field-group flex-grow-2">
+                  <div class="field-group flex-flow">
                     <label for="contratacao_contratante_logradouro">Logradouro*</label>
                     <input type="text" id="contratacao_contratante_logradouro" name="contratacao_contratante_logradouro">
                 </div>
@@ -638,7 +636,7 @@
                     <label for="contratacao_contratante_bairro">Bairro*</label>
                     <input type="text" id="contratacao_contratante_bairro" name="contratacao_contratante_bairro">
                 </div>
-                 <div class="field-group flex-grow">
+                 <div class="field-group medium">
                     <label for="contratacao_contratante_cidade">Cidade*</label>
                     <input type="text" id="contratacao_contratante_cidade" name="contratacao_contratante_cidade">
                 </div>
@@ -1120,7 +1118,7 @@
                     <input type="text" id="contratacao_responsavel_nome" name="contratacao_responsavel_nome">
                 </div>
                  <div class="field-group">
-                    <label>*</label>
+                    <label>Sexo*</label>
                     <div class="radio-group inline">
                          <input type="radio" id="contratacao_responsavel_sexo_masculino" name="contratacao_responsavel_sexo" value="Masculino"> <label for="contratacao_responsavel_sexo_masculino">Masculino</label>
                          <input type="radio" id="contratacao_responsavel_sexo_feminino" name="contratacao_responsavel_sexo" value="Feminino"> <label for="contratacao_responsavel_sexo_feminino">Feminino</label>
@@ -1211,7 +1209,7 @@
                         </div>
                   </div>
              </div>
-
+             <div class="resumo-contratacao">
              <h2>Resumo da contratação</h2>
              <div class="row">
                  <div class="field-group date-group">
@@ -1309,6 +1307,7 @@
              </div>
 
         </section>
+        </div>
 
         <section class="carta-orientacao">
             <div class="contratacao-header">
@@ -1350,7 +1349,7 @@
 
             <p>* Para consultar a lista completa de Procedimentos de Alta Complexidade (PAC), acesse o Rol de Procedimentos e Eventos em Saúde da ANS no endereço eletrônico: <a href="https://www.ans.gov.br">www.ans.gov.br</a> - Perfil Beneficiário.</p>
             <p>Em caso de dúvidas, entre em contato com a ANS pelo telefone 0800-701-9656 ou consulte a página da ANS - <a href="https://www.ans.gov.br">www.ans.gov.br</a> - Perfil Beneficiário.</p>
-
+            <div class="assinaturas">
              <h2>ASSINATURAS</h2>
              <div class="signature-blocks">
                  <div class="signature-block">
@@ -1394,7 +1393,7 @@
                      </div>
                  </div>
              </div>
-
+             </div>
             <div class="carta-orientacao-footer">
                  <div class="carta-orientacao-footer-text">Mais tempo para viver.</div>
                  <div class="carta-orientacao-footer-ans">ANS - N° 42233-9</div>
@@ -2769,6 +2768,8 @@ pessoais sensíveis descritos (“Dados Coletados") na forma prevista neste Term
                  </div>
              </div>
 
+             <div class="dependentes-print">
+
              <h2>DADOS DO (S) DEPENDENTE (S)</h2>
 
              <div class="dependent-odonto-row">
@@ -2954,11 +2955,14 @@ pessoais sensíveis descritos (“Dados Coletados") na forma prevista neste Term
                      <input type="text" id="odonto_dep4_parentesco" name="odonto_dep4_parentesco">
                  </div>
              </div>
+             </div>
              <!-- End Repeat for Dep 2-4 -->
 
              <p class="small-note" style="margin-top: 15px;">
                  *GRAU PARENTESCO (GP): 1- Cônjuge | 2- Filho(a) | 3- Neto(a) | 4- Outros
              </p>
+
+
 
              <div class="odonto-footer">
                  <div class="odonto-footer-info">
@@ -2999,7 +3003,7 @@ pessoais sensíveis descritos (“Dados Coletados") na forma prevista neste Term
              <p>**** O tratamento executado será de acordo com a prescrição do profisional.</p>
 
              <br>
-              
+              <div class="resumo-odonto-print">
              <h3><u>Resumo do contrato de prestação de serviços odontológicos</u></h3>
              <p>1.0 -Do objeto.</p>
              <p>1.1 - O presente contrato tem por objetivo a cobertura dos custos (pela ISODONT das despesas com os procedimentos odontológicos prestados por terceiros aos usuários informados pela contratante, nos límítes e nas condições de cobertura estabelecido neste contrato (e de acordo com o previsto no plano contratado, registrado na ANS, em obediência ao que estabelece a Lei 9,656, de 3 de junho de 1996, e sua regulamentação.</p>
@@ -3063,7 +3067,7 @@ pessoais sensíveis descritos (“Dados Coletados") na forma prevista neste Term
             <p>n) não haverá cobertura para despesas ou custos decorrentes
                 do não-comparecimento do usuário à consula por ele
                 previamente marcada.</p>
-
+</div>
 
             <h3 style="text-align: center;">CARÊNCIA</h3>
                 <table class="health-declaration-table">

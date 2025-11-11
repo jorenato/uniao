@@ -180,6 +180,7 @@ h2 {
 }
 
 /* Input sizing helpers */
+.flex-flow{flex: 2}
 .flex-grow { flex-grow: 1; min-width: 150px; }
 .flex-grow-2 { flex-grow: 2; min-width: 200px; }
 .medium { width: 120px; flex-shrink: 0; }
@@ -1851,9 +1852,50 @@ footer {
     padding: 0;
   }
 
+  .personal-data{
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  .benefits{
+    page-break-inside: avoid;
+    break-inside: avoid;
+    page-break-after: always;
+    break-after: always;
+  }
+
+  .dependents{
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .contratacao-proposta-dependent{
+    page-break-before: always;
+    break-before: always;
+  }
+
+  .resumo-contratacao{
+    page-break-before: always;
+    break-before: always;
+  }
+
+  .assinaturas{
+    page-break-before: always;
+    break-before: always;
+  }
+
+  .dependentes-print{
+    page-break-before: always;
+    break-before: always;
+  }
+
+  .resumo-odonto-print{
+    page-break-before: always;
+    break-before: always;
+  }
+
   section.terms-declaration,
   section.agent-declaration {
-
     page-break-after: always;
     break-after: always;
   }
