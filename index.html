@@ -163,7 +163,7 @@
                 </div>
                 </div>
                 <div class="row">
-                <div class="field-group medium">
+                <div class="field-group flex-flow">
                     <label for="orgao_funcional">Órgão</label>
                     <input type="text" id="orgao_funcional" name="orgao_funcional">
                 </div>
@@ -174,10 +174,6 @@
                 <div class="field-group medium">
                     <label for="funcao">Função</label>
                     <input type="text" id="funcao" name="funcao">
-                </div>
-                <div class="field-group medium">
-                    <label for="unidade">Unidade</label>
-                    <input type="text" id="unidade" name="unidade">
                 </div>
 
             </div>
@@ -389,6 +385,7 @@
              <div class="footer-logo">
                 <img src="Logo Uniao.png" alt="União de Benefícios Logo" class="logo-small">
                 UNIÃO DOS CONTRIBUINTES DA PREVIDÊNCIA SOCIAL DO BRASIL<br>
+                Atendimento@uniaodebeneficios.com.br
              </div>
              <div class="footer-address">
                 Av. Ernani do Amaral Peixoto, 36 - 13º andar - Centro - Niterói - RJ<br>
@@ -460,10 +457,6 @@
                  <div class="field-group flex-grow">
                      <label for="agent_name">Nome do Agenciador/Consultor/Autônomo</label>
                      <input type="text" id="agent_name" name="agent_name">
-                 </div>
-                 <div class="field-group medium">
-                     <label for="agent_registro">Registro</label>
-                     <input type="text" id="agent_registro" name="agent_registro">
                  </div>
              </div>
              <div class="signature-area">
@@ -664,16 +657,16 @@
              </div>
              <section class="contratacao-proposta-dependent">
             <h2>Dados cadastrais do 1º Dependente</h2>
-            <div class="dependent-contratacao-row">
+            <div class="row">
                  <div class="field-group medium">
                     <label for="contratacao_dep1_cpf">CPF*</label>
                     <input type="text" id="contratacao_dep1_cpf" name="contratacao_dep1_cpf">
                 </div>
-                 <div class="field-group flex-grow">
+                 <div class="field-group flex-flow">
                     <label for="contratacao_dep1_nome">Nome Completo*</label>
                     <input type="text" id="contratacao_dep1_nome" name="contratacao_dep1_nome">
                 </div>
-                  <div class="field-group short">
+                  <div class="field-group medium">
                     <label for="contratacao_dep1_sexo">Sexo*</label>
                     <select id="contratacao_dep1_sexo" name="contratacao_dep1_sexo">
                          <option value=""></option>
@@ -682,12 +675,12 @@
                      </select>
                  </div>
              </div>
-             <div class="dependent-contratacao-row">
+             <div class="row">
                   <div class="field-group medium">
                     <label for="contratacao_dep1_rg">Nº do RG*</label>
                     <input type="text" id="contratacao_dep1_rg" name="contratacao_dep1_rg">
                 </div>
-                 <div class="field-group date-group">
+                 <div class="field-group medium">
                     <label for="contratacao_dep1_data_emissao_rg">Data de Emissão do RG*</label>
                     <input type="date" id="contratacao_dep1_data_emissao_rg" name="contratacao_dep1_data_emissao_rg" placeholder="dd/mm/aaaa">
                 </div>
@@ -707,21 +700,21 @@
                           <option value="Uniao Estavel">União Estável</option>
                      </select>
                 </div>
-                 <div class="field-group date-group">
+                 <div class="field-group medium">
                     <label for="contratacao_dep1_data_nascimento">Data de Nascimento*</label>
                     <input type="date" id="contratacao_dep1_data_nascimento" name="contratacao_dep1_data_nascimento" placeholder="dd/mm/aaaa">
                 </div>
              </div>
-             <div class="dependent-contratacao-row">
+             <div class="row">
                   <div class="field-group medium">
                     <label for="contratacao_dep1_cartao_nacional_saude">Cartão Nacional de Saúde</label>
                     <input type="text" id="contratacao_dep1_cartao_nacional_saude" name="contratacao_dep1_cartao_nacional_saude">
                 </div>
-                 <div class="field-group flex-grow">
+                 <div class="field-group medium">
                     <label for="contratacao_dep1_parentesco">Parentesco</label>
                     <input type="text" id="contratacao_dep1_parentesco" name="contratacao_dep1_parentesco">
                 </div>
-                 <div class="field-group flex-grow">
+                 <div class="field-group flex-flow">
                     <label for="contratacao_dep1_nome_mae">Nome Completo da Mãe*</label>
                     <input type="text" id="contratacao_dep1_nome_mae" name="contratacao_dep1_nome_mae">
                 </div>
@@ -734,15 +727,17 @@
                          <input type="radio" id="contratacao_dep1_plano_anterior_nao" name="contratacao_dep1_plano_anterior" value="Não"> <label for="contratacao_dep1_plano_anterior_nao">Não</label>
                     </div>
                  </div>
+            </div>
+            <div class="row">
                   <div class="field-group medium">
                     <label for="contratacao_dep1_qual_plano">Qual?</label>
                     <input type="text" id="contratacao_dep1_qual_plano" name="contratacao_dep1_qual_plano">
                 </div>
-                 <div class="field-group date-group">
+                 <div class="field-group medium">
                     <label for="contratacao_dep1_data_inicio">Data de Início: _/_/_</label>
                     <input type="date" id="contratacao_dep1_data_inicio" name="contratacao_dep1_data_inicio" placeholder="dd/mm/aaaa">
                 </div>
-                  <div class="field-group date-group">
+                  <div class="field-group medium">
                     <label for="contratacao_dep1_data_ultimo_pagamento">Data último pagamento: _/_/_</label>
                     <input type="date" id="contratacao_dep1_data_ultimo_pagamento" name="contratacao_dep1_data_ultimo_pagamento" placeholder="dd/mm/aaaa">
                 </div>
@@ -765,7 +760,7 @@
                   </div>
              </div>
              <div class="row">
-                 <div class="field-group flex-grow">
+                 <div class="field-group flex-flow">
                      <label for="contratacao_dep1_qual_operadora_anterior">Qual operadora anterior?</label>
                      <input type="text" id="contratacao_dep1_qual_operadora_anterior" name="contratacao_dep1_qual_operadora_anterior">
                  </div>
@@ -780,16 +775,16 @@
         <!-- Nova Seção: Proposta de Contratação - Dependente 2 -->
         <section class="contratacao-proposta-dependent">
              <h2>Dados cadastrais do 2º Dependente</h2>
-            <div class="dependent-contratacao-row">
+            <div class="row">
                  <div class="field-group medium">
                     <label for="contratacao_dep2_cpf">CPF*</label>
                     <input type="text" id="contratacao_dep2_cpf" name="contratacao_dep2_cpf">
                 </div>
-                 <div class="field-group flex-grow">
+                 <div class="field-group flex-flow">
                     <label for="contratacao_dep2_nome">Nome Completo*</label>
                     <input type="text" id="contratacao_dep2_nome" name="contratacao_dep2_nome">
                 </div>
-                  <div class="field-group short">
+                  <div class="field-group medium">
                     <label for="contratacao_dep2_sexo">Sexo*</label>
                     <select id="contratacao_dep2_sexo" name="contratacao_dep2_sexo">
                          <option value=""></option>
@@ -798,12 +793,12 @@
                      </select>
                  </div>
              </div>
-             <div class="dependent-contratacao-row">
+             <div class="row">
                   <div class="field-group medium">
                     <label for="contratacao_dep2_rg">Nº do RG*</label>
                     <input type="text" id="contratacao_dep2_rg" name="contratacao_dep2_rg">
                 </div>
-                 <div class="field-group date-group">
+                 <div class="field-group medium">
                     <label for="contratacao_dep2_data_emissao_rg">Data de Emissão do RG*</label>
                     <input type="date" id="contratacao_dep2_data_emissao_rg" name="contratacao_dep2_data_emissao_rg" placeholder="dd/mm/aaaa">
                 </div>
@@ -823,7 +818,7 @@
                           <option value="Uniao Estavel">União Estável</option>
                      </select>
                 </div>
-                 <div class="field-group date-group">
+                 <div class="field-group medium">
                     <label for="contratacao_dep2_data_nascimento">Data de Nascimento*</label>
                     <input type="date" id="contratacao_dep2_data_nascimento" name="contratacao_dep2_data_nascimento" placeholder="dd/mm/aaaa">
                 </div>
@@ -833,11 +828,13 @@
                     <label for="contratacao_dep2_cartao_nacional_saude">Cartão Nacional de Saúde</label>
                     <input type="text" id="contratacao_dep2_cartao_nacional_saude" name="contratacao_dep2_cartao_nacional_saude">
                 </div>
+            </div>
+            <div class="row">
                  <div class="field-group medium">
                     <label for="contratacao_dep2_parentesco">Parentesco</label>
                     <input type="text" id="contratacao_dep2_parentesco" name="contratacao_dep2_parentesco">
                 </div>
-                 <div class="field-group flex-grow">
+                 <div class="field-group flex-flow">
                     <label for="contratacao_dep2_nome_mae">Nome Completo da Mãe*</label>
                     <input type="text" id="contratacao_dep2_nome_mae" name="contratacao_dep2_nome_mae">
                 </div>
@@ -850,15 +847,17 @@
                          <input type="radio" id="contratacao_dep2_plano_anterior_nao" name="contratacao_dep2_plano_anterior" value="Não"> <label for="contratacao_dep2_plano_anterior_nao">Não</label>
                     </div>
                  </div>
+                </div>
+                <div class="row">
                   <div class="field-group medium">
                     <label for="contratacao_dep2_qual_plano">Qual?</label>
                     <input type="text" id="contratacao_dep2_qual_plano" name="contratacao_dep2_qual_plano">
                 </div>
-                 <div class="field-group date-group">
+                 <div class="field-group medium">
                     <label for="contratacao_dep2_data_inicio">Data de Início: _/_/_</label>
                     <input type="date" id="contratacao_dep2_data_inicio" name="contratacao_dep2_data_inicio" placeholder="dd/mm/aaaa">
                 </div>
-                  <div class="field-group date-group">
+                  <div class="field-group medium">
                     <label for="contratacao_dep2_data_ultimo_pagamento">Data último pagamento: _/_/_</label>
                     <input type="date" id="contratacao_dep2_data_ultimo_pagamento" name="contratacao_dep2_data_ultimo_pagamento" placeholder="dd/mm/aaaa">
                 </div>
@@ -869,7 +868,7 @@
                   </div>
              </div>
              <div class="row">
-                 <div class="field-group flex-grow">
+                 <div class="field-group flex-flow">
                      <label for="contratacao_dep2_qual_operadora_anterior">Qual operadora anterior?</label>
                      <input type="text" id="contratacao_dep2_qual_operadora_anterior" name="contratacao_dep2_qual_operadora_anterior">
                  </div>
@@ -883,16 +882,16 @@
         <!-- Nova Seção: Proposta de Contratação - Dependente 3 -->
          <section class="contratacao-proposta-dependent">
              <h2>Dados cadastrais do 3º Dependente</h2>
-            <div class="dependent-contratacao-row">
+            <div class="row">
                  <div class="field-group medium">
                     <label for="contratacao_dep3_cpf">CPF*</label>
                     <input type="text" id="contratacao_dep3_cpf" name="contratacao_dep3_cpf">
                 </div>
-                 <div class="field-group flex-grow">
+                 <div class="field-group flex-flow">
                     <label for="contratacao_dep3_nome">Nome Completo*</label>
                     <input type="text" id="contratacao_dep3_nome" name="contratacao_dep3_nome">
                 </div>
-                  <div class="field-group short">
+                  <div class="field-group medium">
                     <label for="contratacao_dep3_sexo">Sexo*</label>
                     <select id="contratacao_dep3_sexo" name="contratacao_dep3_sexo">
                          <option value=""></option>
@@ -901,12 +900,12 @@
                      </select>
                  </div>
              </div>
-             <div class="dependent-contratacao-row">
+             <div class="row">
                   <div class="field-group medium">
                     <label for="contratacao_dep3_rg">Nº do RG*</label>
                     <input type="text" id="contratacao_dep3_rg" name="contratacao_dep3_rg">
                 </div>
-                 <div class="field-group date-group">
+                 <div class="field-group medium">
                     <label for="contratacao_dep3_data_emissao_rg">Data de Emissão do RG*</label>
                     <input type="date" id="contratacao_dep3_data_emissao_rg" name="contratacao_dep3_data_emissao_rg" placeholder="dd/mm/aaaa">
                 </div>
@@ -926,12 +925,12 @@
                           <option value="Uniao Estavel">União Estável</option>
                      </select>
                 </div>
-                 <div class="field-group date-group">
+                 <div class="field-group medium">
                     <label for="contratacao_dep3_data_nascimento">Data de Nascimento*</label>
                     <input type="date" id="contratacao_dep3_data_nascimento" name="contratacao_dep3_data_nascimento" placeholder="dd/mm/aaaa">
                 </div>
              </div>
-             <div class="dependent-contratacao-row">
+             <div class="row">
                   <div class="field-group medium">
                     <label for="contratacao_dep3_cartao_nacional_saude">Cartão Nacional de Saúde</label>
                     <input type="text" id="contratacao_dep3_cartao_nacional_saude" name="contratacao_dep3_cartao_nacional_saude">
@@ -953,15 +952,17 @@
                          <input type="radio" id="contratacao_dep3_plano_anterior_nao" name="contratacao_dep3_plano_anterior" value="Não"> <label for="contratacao_dep3_plano_anterior_nao">Não</label>
                     </div>
                  </div>
+                </div>
+                <div class="row">
                   <div class="field-group medium">
                     <label for="contratacao_dep3_qual_plano">Qual?</label>
                     <input type="text" id="contratacao_dep3_qual_plano" name="contratacao_dep3_qual_plano">
                 </div>
-                 <div class="field-group date-group">
+                 <div class="field-group medium">
                     <label for="contratacao_dep3_data_inicio">Data de Início: _/_/_</label>
                     <input type="date" id="contratacao_dep3_data_inicio" name="contratacao_dep3_data_inicio" placeholder="dd/mm/aaaa">
                 </div>
-                  <div class="field-group date-group">
+                  <div class="field-group medium">
                     <label for="contratacao_dep3_data_ultimo_pagamento">Data último pagamento: _/_/_</label>
                     <input type="date" id="contratacao_dep3_data_ultimo_pagamento" name="contratacao_dep3_data_ultimo_pagamento" placeholder="dd/mm/aaaa">
                 </div>
@@ -975,7 +976,7 @@
                   </div>
              </div>
              <div class="row">
-                 <div class="field-group flex-grow">
+                 <div class="field-group flex-flow">
                      <label for="contratacao_dep3_qual_operadora_anterior">Qual operadora anterior?</label>
                      <input type="text" id="contratacao_dep3_qual_operadora_anterior" name="contratacao_dep3_qual_operadora_anterior">
                  </div>
@@ -989,16 +990,16 @@
         <!-- Nova Seção: Proposta de Contratação - Dependente 4 -->
          <section class="contratacao-proposta-dependent">
              <h2>Dados cadastrais do 4º Dependente</h2>
-            <div class="dependent-contratacao-row">
+            <div class="row">
                  <div class="field-group medium">
                     <label for="contratacao_dep4_cpf">CPF*</label>
                     <input type="text" id="contratacao_dep4_cpf" name="contratacao_dep4_cpf">
                 </div>
-                 <div class="field-group flex-grow">
+                 <div class="field-group flex-flow">
                     <label for="contratacao_dep4_nome">Nome Completo*</label>
                     <input type="text" id="contratacao_dep4_nome" name="contratacao_dep4_nome">
                 </div>
-                  <div class="field-group short">
+                  <div class="field-group medium">
                     <label for="contratacao_dep4_sexo">Sexo*</label>
                     <select id="contratacao_dep4_sexo" name="contratacao_dep4_sexo">
                          <option value=""></option>
@@ -1007,12 +1008,12 @@
                      </select>
                  </div>
              </div>
-             <div class="dependent-contratacao-row">
+             <div class="row">
                   <div class="field-group medium">
                     <label for="contratacao_dep4_rg">Nº do RG*</label>
                     <input type="text" id="contratacao_dep4_rg" name="contratacao_dep4_rg">
                 </div>
-                 <div class="field-group date-group">
+                 <div class="field-group medium">
                     <label for="contratacao_dep4_data_emissao_rg">Data de Emissão do RG*</label>
                     <input type="date" id="contratacao_dep4_data_emissao_rg" name="contratacao_dep4_data_emissao_rg" placeholder="dd/mm/aaaa">
                 </div>
@@ -1032,12 +1033,12 @@
                           <option value="Uniao Estavel">União Estável</option>
                      </select>
                 </div>
-                 <div class="field-group date-group">
+                 <div class="field-group medium">
                     <label for="contratacao_dep4_data_nascimento">Data de Nascimento*</label>
                     <input type="date" id="contratacao_dep4_data_nascimento" name="contratacao_dep4_data_nascimento" placeholder="dd/mm/aaaa">
                 </div>
              </div>
-             <div class="dependent-contratacao-row">
+             <div class="row">
                   <div class="field-group medium">
                     <label for="contratacao_dep4_cartao_nacional_saude">Cartão Nacional de Saúde</label>
                     <input type="text" id="contratacao_dep4_cartao_nacional_saude" name="contratacao_dep4_cartao_nacional_saude">
@@ -1059,15 +1060,17 @@
                          <input type="radio" id="contratacao_dep4_plano_anterior_nao" name="contratacao_dep4_plano_anterior" value="Não"> <label for="contratacao_dep4_plano_anterior_nao">Não</label>
                     </div>
                  </div>
+                </div>
+                <div class="row">
                   <div class="field-group medium">
                     <label for="contratacao_dep4_qual_plano">Qual?</label>
                     <input type="text" id="contratacao_dep4_qual_plano" name="contratacao_dep4_qual_plano">
                 </div>
-                 <div class="field-group date-group">
+                 <div class="field-group medium">
                     <label for="contratacao_dep4_data_inicio">Data de Início: _/_/_</label>
                     <input type="date" id="contratacao_dep4_data_inicio" name="contratacao_dep4_data_inicio" placeholder="dd/mm/aaaa">
                 </div>
-                  <div class="field-group date-group">
+                  <div class="field-group medium">
                     <label for="contratacao_dep4_data_ultimo_pagamento">Data último pagamento: _/_/_</label>
                     <input type="date" id="contratacao_dep4_data_ultimo_pagamento" name="contratacao_dep4_data_ultimo_pagamento" placeholder="dd/mm/aaaa">
                 </div>
@@ -1081,7 +1084,7 @@
                   </div>
              </div>
              <div class="row">
-                 <div class="field-group flex-grow">
+                 <div class="field-group flex-flow">
                      <label for="contratacao_dep4_qual_operadora_anterior">Qual operadora anterior?</label>
                      <input type="text" id="contratacao_dep4_qual_operadora_anterior" name="contratacao_dep4_qual_operadora_anterior">
                  </div>
@@ -1113,7 +1116,7 @@
                     <label for="contratacao_responsavel_cpf">CPF*</label>
                     <input type="text" id="contratacao_responsavel_cpf" name="contratacao_responsavel_cpf">
                 </div>
-                 <div class="field-group flex-grow">
+                 <div class="field-group flex-flow">
                     <label for="contratacao_responsavel_nome">Nome completo*</label>
                     <input type="text" id="contratacao_responsavel_nome" name="contratacao_responsavel_nome">
                 </div>
@@ -1140,7 +1143,7 @@
                     <label for="contratacao_responsavel_celular">Celular*</label>
                     <input type="tel" id="contratacao_responsavel_celular" name="contratacao_responsavel_celular">
                 </div>
-                 <div class="field-group date-group">
+                 <div class="field-group medium">
                     <label for="contratacao_responsavel_data_nascimento">Data de nascimento*</label>
                     <input type="date" id="contratacao_responsavel_data_nascimento" name="contratacao_responsavel_data_nascimento" placeholder="dd/mm/aaaa">
                  </div>
@@ -1160,7 +1163,7 @@
                     <label for="contratacao_responsavel_rg_cnh">Nº do RG/CNH*</label>
                     <input type="text" id="contratacao_responsavel_rg_cnh" name="contratacao_responsavel_rg_cnh">
                  </div>
-                 <div class="field-group date-group">
+                 <div class="field-group medium">
                     <label for="contratacao_responsavel_data_emissao_rg_cnh">Data de Emissão RG/CNH*</label>
                     <input type="date" id="contratacao_responsavel_data_emissao_rg_cnh" name="contratacao_responsavel_data_emissao_rg_cnh" placeholder="dd/mm/aaaa">
                  </div>
@@ -1170,7 +1173,7 @@
                     <label for="contratacao_responsavel_cep">CEP*</label>
                     <input type="text" id="contratacao_responsavel_cep" name="contratacao_responsavel_cep">
                  </div>
-                  <div class="field-group flex-grow-2">
+                  <div class="field-group flex-flow">
                     <label for="contratacao_responsavel_logradouro">Logradouro*</label>
                     <input type="text" id="contratacao_responsavel_logradouro" name="contratacao_responsavel_logradouro">
                 </div>
@@ -1188,7 +1191,7 @@
                     <label for="contratacao_responsavel_bairro">Bairro*</label>
                     <input type="text" id="contratacao_responsavel_bairro" name="contratacao_responsavel_bairro">
                 </div>
-                 <div class="field-group flex-grow">
+                 <div class="field-group flex-flow">
                     <label for="contratacao_responsavel_cidade">Cidade*</label>
                     <input type="text" id="contratacao_responsavel_cidade" name="contratacao_responsavel_cidade">
                 </div>
