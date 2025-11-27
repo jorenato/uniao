@@ -1223,9 +1223,7 @@
                     <label for="contratacao_resumo_provavel_vigencia">Provável vigência:</label>
                     <input type="text" id="contratacao_resumo_provavel_vigencia" name="contratacao_resumo_provavel_vigencia">
                  </div>
-             </div>
-             <div class="row">
-                 <div class="field-group flex-grow">
+                 <div class="field-group medium">
                     <label for="contratacao_resumo_cpf_contratante">CPF contratante:</label>
                     <input type="text" id="contratacao_resumo_cpf_contratante" name="contratacao_resumo_cpf_contratante">
                  </div>
@@ -1233,13 +1231,11 @@
                     <label for="contratacao_resumo_tipo">Tipo:</label>
                     <input type="text" id="contratacao_resumo_tipo" name="contratacao_resumo_tipo">
                  </div>
-             </div>
-             <div class="row">
                   <div class="field-group medium">
                     <label for="contratacao_resumo_segmentacao">Segmentação:</label>
                     <input type="text" id="contratacao_resumo_segmentacao" name="contratacao_resumo_segmentacao">
                  </div>
-                 <div class="field-group flex-grow">
+                 <div class="field-group flex-flow">
                     <label for="contratacao_resumo_plano">Plano:</label>
                     <input type="text" id="contratacao_resumo_plano" name="contratacao_resumo_plano">
                  </div>
@@ -1270,7 +1266,7 @@
                  </div>
              </div>
              <div class="row">
-                  <div class="field-group flex-grow">
+                  <div class="field-group flex-flow">
                     <label for="contratacao_resumo_beneficiarios">Beneficiários:</label>
                     <input type="text" id="contratacao_resumo_beneficiarios" name="contratacao_resumo_beneficiarios">
                  </div>
@@ -1310,7 +1306,6 @@
              </div>
 
         </section>
-        </div>
 
         <section class="carta-orientacao">
             <div class="contratacao-header">
@@ -2693,7 +2688,7 @@ pessoais sensíveis descritos (“Dados Coletados") na forma prevista neste Term
 
              <h2>DADOS DO TITULAR</h2>
              <div class="row">
-                 <div class="field-group flex-grow">
+                 <div class="field-group flex-flow">
                     <label for="odonto_titular_nome">Titular:</label>
                     <input type="text" id="odonto_titular_nome" name="odonto_titular_nome">
                  </div>
@@ -2701,12 +2696,12 @@ pessoais sensíveis descritos (“Dados Coletados") na forma prevista neste Term
                     <label for="odonto_titular_cpf">CPF:</label>
                     <input type="text" id="odonto_titular_cpf" name="odonto_titular_cpf">
                 </div>
-                  <div class="field-group date-group">
+                </div>
+                <div class="row">
+                  <div class="field-group medium">
                     <label for="odonto_titular_data_nascimento">Data Nascimento:</label>
                     <input type="date" id="odonto_titular_data_nascimento" name="odonto_titular_data_nascimento" placeholder="__/__/____">
                  </div>
-             </div>
-             <div class="row">
                  <div class="field-group medium">
                     <label for="odonto_titular_rg">RG:</label>
                     <input type="text" id="odonto_titular_rg" name="odonto_titular_rg">
@@ -2745,13 +2740,11 @@ pessoais sensíveis descritos (“Dados Coletados") na forma prevista neste Term
                     <label for="odonto_titular_bairro">Bairro:</label>
                     <input type="text" id="odonto_titular_bairro" name="odonto_titular_bairro">
                  </div>
-             </div>
-             <div class="row">
                  <div class="field-group medium">
                     <label for="odonto_titular_cep">CEP:</label>
                     <input type="text" id="odonto_titular_cep" name="odonto_titular_cep">
                  </div>
-                  <div class="field-group flex-grow">
+                  <div class="field-group flex-flow">
                     <label for="odonto_titular_cidade">Cidade:</label>
                     <input type="text" id="odonto_titular_cidade" name="odonto_titular_cidade">
                 </div>
@@ -2784,21 +2777,20 @@ pessoais sensíveis descritos (“Dados Coletados") na forma prevista neste Term
                      <label for="odonto_dep1_cpf">CPF:</label>
                      <input type="text" name="odonto_dep1_cpf" id="odonto_dep1_cpf">
                  </div>
-                 <div class="field-group date-group">
+                 <div class="field-group medium">
                      <label for="odonto_dep1_data_nascimento">Data Nascimento:</label>
                      <input type="date" name="odonto_dep1_data_nascimento" id="odonto_dep1_data_nascimento" placeholder="__/__/____">
                  </div>
              </div>
-              <div class="dependent-odonto-row">
-                  <div class="dependent-spacer"></div> <!-- Spacer to align with the first row's grid -->
-                  <div class="field-group medium">
+              <div class="row">
+                  <div class="field-group short">
                      <label for="odonto_dep1_sexo">Sexo:</label>
                      <select id="odonto_dep1_sexo" name="odonto_dep1_sexo">
                          <option value=""></option>
                          <option value="M">M</option>
                          <option value="F">F</option>
                      </select>
-                 </div>
+                    </div>
                   <div class="field-group medium">
                      <label for="odonto_dep1_estado_civil">Est. Civil:</label>
                       <select id="odonto_dep1_estado_civil" name="odonto_dep1_estado_civil">
@@ -2811,7 +2803,7 @@ pessoais sensíveis descritos (“Dados Coletados") na forma prevista neste Term
                           <option value="Uniao Estavel">União Estável</option>
                      </select>
                  </div>
-                  <div class="field-group flex-grow">
+                  <div class="field-group flex-flow">
                      <label for="odonto_dep1_mae">Nome da mãe:</label>
                      <input type="text" id="odonto_dep1_mae" name="odonto_dep1_mae">
                  </div>
@@ -2835,8 +2827,7 @@ pessoais sensíveis descritos (“Dados Coletados") na forma prevista neste Term
                       <input type="date" name="odonto_dep2_data_nascimento" id="odonto_dep2_data_nascimento" placeholder="__/__/____">
                  </div>
              </div>
-              <div class="dependent-odonto-row">
-                  <div class="dependent-spacer"></div> <!-- Spacer to align with the first row's grid -->
+              <div class="row">
                   <div class="field-group medium">
                      <label for="odonto_dep2_sexo">Sexo:</label>
                      <select id="odonto_dep2_sexo" name="odonto_dep2_sexo">
@@ -2857,7 +2848,7 @@ pessoais sensíveis descritos (“Dados Coletados") na forma prevista neste Term
                           <option value="Uniao Estavel">União Estável</option>
                      </select>
                  </div>
-                  <div class="field-group flex-grow">
+                  <div class="field-group flex-flow">
                      <label for="odonto_dep2_mae">Nome da mãe:</label>
                      <input type="text" id="odonto_dep2_mae" name="odonto_dep2_mae">
                  </div>
@@ -2881,7 +2872,7 @@ pessoais sensíveis descritos (“Dados Coletados") na forma prevista neste Term
                      <input type="date" name="odonto_dep3_data_nascimento" id="odonto_dep3_data_nascimento" placeholder="__/__/____">
                  </div>
              </div>
-              <div class="dependent-odonto-row">
+              <div class="row">
                   <div class="dependent-spacer"></div> <!-- Spacer to align with the first row's grid -->
                   <div class="field-group medium">
                      <label for="odonto_dep3_sexo">Sexo:</label>
@@ -2903,7 +2894,7 @@ pessoais sensíveis descritos (“Dados Coletados") na forma prevista neste Term
                           <option value="Uniao Estavel">União Estável</option>
                      </select>
                  </div>
-                  <div class="field-group flex-grow">
+                  <div class="field-group flex-flow">
                      <label for="odonto_dep3_mae">Nome da mãe:</label>
                      <input type="text" id="odonto_dep3_mae" name="odonto_dep3_mae">
                  </div>
@@ -2927,7 +2918,7 @@ pessoais sensíveis descritos (“Dados Coletados") na forma prevista neste Term
                      <input type="date" name="odonto_dep4_data_nascimento" id="odonto_dep4_data_nascimento" placeholder="__/__/____">
                  </div>
              </div>
-              <div class="dependent-odonto-row">
+              <div class="row">
                   <div class="dependent-spacer"></div> <!-- Spacer to align with the first row's grid -->
                   <div class="field-group medium">
                      <label for="odonto_dep4_sexo">Sexo:</label>
@@ -2949,7 +2940,7 @@ pessoais sensíveis descritos (“Dados Coletados") na forma prevista neste Term
                           <option value="Uniao Estavel">União Estável</option>
                      </select>
                  </div>
-                  <div class="field-group flex-grow">
+                  <div class="field-group flex-flow">
                      <label for="odonto_dep4_mae">Nome da mãe:</label>
                      <input type="text" id="odonto_dep4_mae" name="odonto_dep4_mae">
                  </div>
